@@ -1,0 +1,12 @@
+.divmain{
+    width:auto;
+  }
+  .divcol1 {
+    width: 10%;
+    float: left;
+    padding-left:15px;
+  }
+  .divcol2 {
+    padding-left:15px;
+    padding-right: 15px;
+  }

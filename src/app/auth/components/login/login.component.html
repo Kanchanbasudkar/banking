@@ -1,0 +1,30 @@
+<!-- main app container -->
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <h1 style="size: initial" font-weight: bold>KB Bank Login Page</h1>
+          <div class="col-md-6 offset-md-3">
+              <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                      <label>User Name</label>
+                      <input type="text" formControlName="userName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" />
+                      <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+                          <div *ngIf="f.userName.errors.required">User Name is required</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label>Password</label>
+                      <input type="text" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                          <div *ngIf="f.password.errors.required">Password is required</div>
+                      </div>
+                  </div>
+                  
+                   <div class="form-group">
+                      <button type = "submit" class="btn btn-primary">Login</button> 
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

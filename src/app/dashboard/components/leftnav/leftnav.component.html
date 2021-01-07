@@ -1,0 +1,24 @@
+<nav class="col-xl-2 col-lg-3 col-md-4" id="bd-docs-nav" aria-label="Main navigation" style="z-index: 0;">
+    <div>
+        <button (click) = "logout()" class="btn btn-primary">Logout</button> 
+    </div>
+    <div>
+        <a>
+            Dashboard
+        </a>
+        <ul>
+            <li routerLinkActive="active">
+                <a routerLink="/dashboard/newtransaction">
+                    New Transaction
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li routerLinkActive="active">
+                <a routerLink="/dashboard/viewsubmittedtransaction">
+                    View Submitted Transaction
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
